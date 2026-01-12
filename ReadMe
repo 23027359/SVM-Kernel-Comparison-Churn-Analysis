@@ -1,0 +1,51 @@
+To help you finalize your Level 3 internship submission, here is a professional README.md tailored specifically for your Task 2: Support Vector Machine (SVM) project.
+
+Task 2: SVM Kernel Comparison & 2D Decision Boundary Visualization
+📋 Project Overview
+This project is part of the Level 3 Machine Learning Internship tasks. It explores the use of Support Vector Machines (SVM) to classify customer churn, specifically comparing how different mathematical kernels handle complex data boundaries.
+
+📊 Key Objectives
+Kernel Comparison: Directly evaluate and compare the performance of Linear and RBF (Radial Basis Function) kernels.
+
+Dimensionality Reduction: Implement Principal Component Analysis (PCA) to project high-dimensional behavioral data into 2D for visual analysis.
+
+Decision Boundary Visualization: Generate a visual contour map to show how the SVM separates "Churn" from "No Churn" zones.
+
+Comprehensive Evaluation: Measure model success using Accuracy, Precision, Recall, F1-Score, and ROC-AUC metrics.
+
+🛠️ Technical Implementation
+1. Data Preparation
+Source: The model uses the Customer Churn dataset, split into training (churn-bigml-80.csv) and testing (churn-bigml-20.csv) sets.
+
+Encoding: Categorical features like 'International plan' and 'Voice mail plan' are converted into binary numerical format.
+
+Feature Scaling: Applied StandardScaler to all 17 behavioral features. Note: This is a critical step for SVMs because they are distance-based algorithms.
+
+2. SVM Kernel Analysis
+I compared two distinct SVM approaches:
+
+Linear Kernel: Best suited for datasets where classes can be separated by a straight line.
+
+RBF Kernel: A non-linear approach that can capture more complex patterns in customer behavior.
+
+3. PCA Visualization
+Because the dataset has 17 features, it is impossible to visualize directly. I used PCA to reduce the data to its two most significant components. This allowed for the generation of a 2D plot showing the model's decision regions.
+
+📈 Results Summary
+The script outputs a final comparison table and a confusion matrix to validate the findings.
+
+RBF Kernel: Generally performs better on this dataset as customer churn patterns are rarely strictly linear.
+
+Visual Insight: The PCA plot clearly illustrates the "islands" of churn behavior within the overall customer base.
+
+💻 How to Run
+Requirement: Ensure scikit-learn, pandas, seaborn, and matplotlib are installed.
+
+
+Execution: Run the script to see the performance metrics and generated plots.
+
+Intern: Sindisiwe
+
+Internship: Codveda Machine Learning
+
+Task Status: Level 3 Task 2 - COMPLETED
