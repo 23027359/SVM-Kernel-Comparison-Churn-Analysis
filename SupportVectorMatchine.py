@@ -148,10 +148,6 @@ plt.ylabel('Actual')
 plt.xlabel('Predicted')
 plt.show()
 
-print("\nLevel 3 Task 2 - Support Vector Machine → COMPLETED!")
-print("Capture the comparison table, decision boundary plot, and confusion matrix for your submission.")
-print("RBF almost always wins here — explain why in your video!")
-
 
 # In[ ]:
 
