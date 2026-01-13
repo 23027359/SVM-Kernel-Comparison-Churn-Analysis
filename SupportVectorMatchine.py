@@ -28,7 +28,7 @@ warnings.filterwarnings('ignore')
 plt.style.use('seaborn-v0_8')
 sns.set_palette("husl")
 
-# ──── 1. Load data using your actual folder path ────────────────────────────
+
 folder_path = r"C:\Users\Sindi\OneDrive\Codveda Matchine Learning Internship\Churn Prdiction Data"
 
 train_file = folder_path + r"\churn-bigml-80.csv"
